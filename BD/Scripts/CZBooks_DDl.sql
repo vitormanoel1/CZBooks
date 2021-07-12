@@ -48,9 +48,9 @@ CREATE TABLE livro
 	IdEmpresa INT FOREIGN KEY REFERENCES Empresa(IdEmpresa),
 	IdCategoria INT FOREIGN KEY REFERENCES Categoria(IdCategoria),
 	IdAutor INT FOREIGN KEY REFERENCES Autor(IdAutor),
-	Titulo VARCHAR(100) NOT NULL,
-	Sinopse VARCHAR(100) NOT NULL,
-	DataPublicação DATE NOT NULL,
-	Preço VARCHAR(50) NOT NULL
+	Titulo VARCHAR(500) NOT NULL,
+	Sinopse VARCHAR(800) NOT NULL,
+	DataPublicacao DATE NOT NULL,
+	Preco VARCHAR(200) NOT NULL
 );
 GO
